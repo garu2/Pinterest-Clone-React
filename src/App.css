@@ -1,0 +1,164 @@
+/* header styles */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+header {
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0
+}
+header ul li {
+  flex-grow:  2;
+  list-style: none;
+  text-align: center;
+}
+header ul li:nth-child(2) {
+  background-color: #000;
+  padding: 13px 0px;
+  border-radius: 25px;
+}
+header ul li:nth-child(2) a {
+  color: #fff;
+}
+header ul li:nth-child(5) {
+  position: relative;
+  flex-grow: 20;
+}
+header ul li:nth-child(5):before {
+  content: "";
+  width: 16px;
+	height: 16px;
+	background-image: url(/searchicon.svg);
+	background-size: 100%;
+	display: inline-block;
+	position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+header ul li:first-child {
+  flex-grow: 1;
+}
+header ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #111111;
+}
+header ul li input {
+  background-color: #E9E9E9;
+  border: none;
+  padding: 17px 25px 17px 35px;
+  border-radius: 25px;
+  width: 100%;
+  font-size: inherit;
+}
+header ul li input:focus {
+  outline: 4px solid #0084ff80;
+}
+
+/* conteten mazonry */
+.masonry img{
+  width: 100%;
+  object-fit: cover;
+  /* height: 100%; */
+  border-radius: 15px;
+}
+.masonry .item p {
+  margin-top: 2px;
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 14px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
+}
+.masonry .item img.user {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.masonry .item div span {
+  color: #111111;
+  font-size: 14px;
+}
+.masonry .item div span:hover {
+  text-decoration: underline;
+}
+.masonry .item div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.masonry .item .image {
+  position: relative;
+}
+.masonry .item .image .btn-save {
+  background-color: #e60023;
+  color: #fff;
+  font-weight: 600;
+  padding: 13px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: none;
+}
+.masonry .item .image:hover .btn-save {
+  display: block;
+}
+.masonry .item .image .btn-save:hover {
+  background-color: #c3001e;
+}
+.masonry .item .image:hover > img  {
+  filter: brightness(65%);
+}
+.masonry .item .image .icon-upload,
+.masonry .item .image .icon-dots {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  bottom: 11px;
+  display: none;
+}
+.masonry .item .image:hover .icon-upload {
+  display: block;
+}
+.masonry .item .image:hover .icon-dots {
+  display: block;
+}
+.masonry .item .image .icon-dots{
+  right: 11px;
+}
+.masonry .item .image .icon-upload {
+  right: 53px;
+}
+.masonry .item .image .icon-upload img:hover,
+.masonry .item .image .icon-dots img:hover{
+  filter: brightness(112%);
+}
+
+p.author {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 40px;
+  gap: 7px;
+  color: #000;
+}
+p.author a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+}
