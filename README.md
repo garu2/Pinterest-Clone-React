@@ -1,9 +1,9 @@
-# 🤪 Clone Pinterest
+# 🐱 Clone Pinterest
 Realizamos un proyecto en React, un clon visual de Pinterest usando el compotent "Masonry" de Material UI, tambien el paquete de infinite scroll, el repositorio de images de "unsplash" y por ultimo "zustand" para los estados globales.
-![image](hhttps://res.cloudinary.com/dqd5x0s7w/image/upload/v1686482034/github/pinterestPage_x4vv4a.png)
+![image](https://res.cloudinary.com/dqd5x0s7w/image/upload/v1686482034/github/pinterestPage_x4vv4a.png)
 
 ## 🚀DEMO
- [Deploy]()
+ [Deploy](https://pinterest-clone-five-red.vercel.app/)
 
 ## 💻Tutorial
 <a href='https://youtu.be/ULJNptJuEws' target='_blank'>
@@ -12,13 +12,16 @@ Realizamos un proyecto en React, un clon visual de Pinterest usando el compotent
 
 ## 📦Getting Started
 ```
-git clone 
+git clone https://github.com/garu2/Pinterest-Clone-React.git
 ```
 ```
-cd 
+cd Pinterest-Clone-React
 ```
 ```
 npm install
+```
+```
+Add Access Key to .env file
 ```
 ```
 npm run dev
